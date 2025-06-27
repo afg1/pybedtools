@@ -257,6 +257,7 @@ cmdclass = {
     'clean': CleanCommand,
     'build': build,
     'sdist': SDist,
+    'build_ext': InformativeBuildExt,
 }
 
 if USE_CYTHON:
