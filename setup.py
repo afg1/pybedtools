@@ -241,7 +241,8 @@ extensions = [
         libraries=['stdc++', 'z'],
         include_dirs=['pybedtools/include/'],
         sources=['pybedtools/cbedtools' + EXT] + sorted(glob.glob('pybedtools/include/*.cpp')),
-        language='c++'),
+        language='c++',
+        extra_compile_args=['-std=c++11']),
 
     Extension(
         'pybedtools.featurefuncs',
@@ -249,7 +250,8 @@ extensions = [
         libraries=['stdc++', 'z'],
         include_dirs=['pybedtools/include/'],
         sources=['pybedtools/featurefuncs' + EXT] + sorted(glob.glob('pybedtools/include/*.cpp')),
-        language='c++'),
+        language='c++',
+        extra_compile_args=['-std=c++11']),
 ]
 
 
