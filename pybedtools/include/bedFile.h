@@ -30,6 +30,8 @@
 #include <limits.h>
 #include <stdint.h>
 #include <cstdio>
+#include <memory>
+#include <cstddef>
 //#include <tr1/unordered_map>  // Experimental.
 using namespace std;
 
