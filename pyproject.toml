@@ -11,5 +11,13 @@ dependencies = [
     "pysam",
     "pandas"
 ]
+
+[[tool.setuptools.ext-modules]]
+name = "pybedtools.cbedtools"
+sources = ["pybedtools/cbedtools.pyx"]
+
+[tool.setuptools.ext-modules.include-dirs]
+numpy = "get_include"
+
 [tool.pytest.ini_options]
 testpaths = ["pybedtools"]
