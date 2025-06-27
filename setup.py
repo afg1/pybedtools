@@ -35,11 +35,11 @@ if '--usage' in sys.argv:
     print(usage)
     sys.exit(0)
 
-elif 'cythonize' in sys.argv:
-    USE_CYTHON = True
+# elif 'cythonize' in sys.argv:
+USE_CYTHON = True
 
-else:
-    USE_CYTHON = False
+# else:
+#     USE_CYTHON = False
 
 if USE_CYTHON and not HAVE_CYTHON:
     raise ValueError(
